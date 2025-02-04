@@ -1,0 +1,13 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button {
+  width: 200px;
+}

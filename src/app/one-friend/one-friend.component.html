@@ -1,0 +1,35 @@
+<h2>One Friend</h2>
+<app-list-friends></app-list-friends>
+<div id="one-friend-card" class="container mt-5">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card bg-primary-subtle">
+            <a [routerLink]="'/friends'">Voir mes amis</a>
+              <img src="path/to/user-image.jpg" class="card-img-top" alt="Image de profil">
+              <div class="card-body">
+                  <h5 class="card-title">{{oneFriendName}}</h5>
+                  <p class="card-text">Status :  {{getOneFriendStatus()}}</p>
+                  <p class="card-text">Age :  {{oneFriendAge}}</p>
+                  <p class="card-text">Bio :  {{oneFriendBio}}</p>
+                  <hr>
+                  <p>Les Passions de steven : </p>
+                  <p>{{oneFriendPassions[0]}}</p>
+                  <p>{{oneFriendPassions[1]}}</p>
+                  <p>{{oneFriendPassions[2]}}</p>
+                  <hr>
+                  <p class="card-text">Réputation :  {{1==1? 'Ringard':'Cool'}}</p>
+                  <hr>
+                  <p class="card-text">Xss? :  {{oneFriendXss}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+    <!-- <img [src]="imageSrc" alt="Image dynamique" class="image" /> -->
+
+    <button [disabled]="isDisabled" class="btn">
+      Cliquez-moi
+    </button>
+  </div>
+</div>
+

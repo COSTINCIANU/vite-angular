@@ -1,0 +1,20 @@
+<h2>My Friends</h2>
+<app-one-friend></app-one-friend>
+<div class="container text-center mt-4">
+  <!-- Input pour la saisie d'un ami -->
+  <input (input)="onUpdateFriendsList($event)"
+  type="text" class="form-control w-50 m-auto"
+  placeholder="Nom Ami" aria-label="Username">
+
+  <!-- Affichage de la variable mise à jour en temps réel -->
+  <p class="mt-2">Saisie en cours : {{ listFriendsInputText }}</p>
+
+  <!-- Bouton pour ajouter l'ami -->
+  <button (click)="onAddingFriends()" class="btn btn-primary mt-3">
+    Ajouter un ami
+  </button>
+
+  <!-- Affichage du statut après ajout -->
+  <p class="mt-2">{{ listFriendsCreationStatus }}</p>
+</div>
+
