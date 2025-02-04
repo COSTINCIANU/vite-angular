@@ -1,0 +1,27 @@
+Doc Angular
+https://angular.dev/tutorials/learn-angular/2-updating-the-component-class
+
+Template de pages 404
+https://freefrontend.com/html-css-404-page-templates/
+
+Bootstrap avec Vite
+https://getbootstrap.com/docs/5.3/getting-started/vite/
+
+1) Instalation de projet
+npm create vite@latest
+
+2) on donne un nom a notre projet
+
+3) On choisi l'option instaler angular
+
+4) on dit yes et on dit N  et on installe css
+
+5) Instalation de Boutstrap (https://getbootstrap.com/docs/5.3/getting-started/download/#npm)
+npm install bootstrap@5.3.3
+
+6) Instalation ng-bootstrap.github.io  (https://ng-bootstrap.github.io/#/getting-started)
+ng add @ng-bootstrap/ng-bootstrap
+
+
+
+
