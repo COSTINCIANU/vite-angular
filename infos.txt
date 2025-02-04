@@ -23,20 +23,5 @@ npm install bootstrap@5.3.3
 ng add @ng-bootstrap/ng-bootstrap
 
 
-/src
-│── /app
-│   │── /list-friends
-│   │   │── list-friends.component.ts
-│   │   │── list-friends.component.html
-│   │   │── list-friends.component.css
-│   │── /one-friend
-│   │   │── one-friend.component.ts
-│   │   │── one-friend.component.html
-│   │   │── one-friend.component.css
-│   │── app.component.ts
-│   │── app.component.html
-│   │── app.module.ts
-│── main.ts
-│── index.html
 
 
