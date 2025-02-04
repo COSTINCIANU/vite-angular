@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ListFriendsComponent } from './list-friends/list-friends.component';
 import { OneFriendComponent } from './one-friend/one-friend.component';
+import { UserInputComponent } from './user-input/user-input.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,5 +14,6 @@ export const routes: Routes = [
   { path: 'list-friends', component: ListFriendsComponent },
   { path: '', redirectTo: '/list-friends', pathMatch: 'full' },
 
+  { path: 'user-input', component: UserInputComponent },
   { path: '**', loadComponent: () => import('./not-found/not-found.component').then(m => m.NotFoundComponent) }
 ];

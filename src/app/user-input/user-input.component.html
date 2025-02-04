@@ -1,0 +1,19 @@
+<h1>User Input!</h1>
+<div class="container text-center mt-4">
+  <!-- Input lié à userName avec Two-Way Data Binding -->
+  <input type="text"
+         class="form-control w-50 m-auto"
+         placeholder="Entrez votre nom"
+         [(ngModel)]="userName">
+
+  <!-- Affichage dynamique de la variable userName -->
+  <p class="mt-2">Nom saisi : {{ userName }}</p>
+
+  <!-- Bouton cliquable SEULEMENT si userName n'est pas vide -->
+  <button class="btn btn-danger mt-3"
+          [disabled]="userName === ''"
+          (click)="resetUserName()">
+    Réinitialiser
+  </button>
+
+</div>
